@@ -15,7 +15,7 @@
         <div class="header">
             <ul class="gnb">
                 <li><a href="#">Women</a></li>
-                <li><a href="#">Man</a></li>
+                <li><a href="#">Men</a></li>
                 <li><a href="#">Kids</a></li>
                 <li><a href="#">Accessories</a></li>
                 <li><a href="#">Sale</a></li>
@@ -49,7 +49,7 @@
                 <a href="#">Shop now <i class="xi-long-arrow-right"></i></a>
             </div>
             <div class="item">
-                <h3>for Women</h3>
+                <h3>for Men</h3>
                 <a href="#">Shop now <i class="xi-long-arrow-right"></i></a>
             </div>
         </div>
@@ -160,43 +160,45 @@
                     <i class="xi-angle-right next"></i>
                 </div>
             </div>
-            <div class="section_items slide3">
-                <div class="item">
-                    <div class="thumb">1</div>
-                    <div class="titles">
-                        <h4>나이키 덩크 로우 레트로</h4>                        
+            <div class="section_items swiper2">
+                <div class="swiper-wrapper">
+                    <div class="item swiper-slide">
+                        <div class="thumb">1</div>
+                        <div class="titles">
+                            <h4>나이키 덩크 로우 레트로</h4>                        
+                        </div>
                     </div>
+                    <div class="item swiper-slide">
+                        <div class="thumb">2</div>
+                        <div class="titles">
+                            <h4>나이키 덩크 로우 레트로</h4>                        
+                        </div>
+                    </div>
+                    <div class="item swiper-slide">
+                        <div class="thumb">3</div>
+                        <div class="titles">
+                            <h4>나이키 덩크 로우 레트로</h4>                       
+                        </div>
+                    </div>
+                    <div class="item swiper-slide">
+                        <div class="thumb">4</div>
+                        <div class="titles">
+                            <h4>나이키 덩크 로우 레트로</h4>                       
+                        </div>
+                    </div>
+                    <div class="item swiper-slide">
+                        <div class="thumb">5</div>
+                        <div class="titles">
+                            <h4>나이키 덩크 로우 레트로</h4>                        
+                        </div>
+                    </div>
+                    <div class="item swiper-slide">
+                        <div class="thumb">6</div>
+                        <div class="titles">
+                            <h4>나이키 덩크 로우 레트로</h4>                       
+                        </div>
+                    </div>                
                 </div>
-                <div class="item">
-                    <div class="thumb">2</div>
-                    <div class="titles">
-                        <h4>나이키 덩크 로우 레트로</h4>                        
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="thumb">3</div>
-                    <div class="titles">
-                        <h4>나이키 덩크 로우 레트로</h4>                       
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="thumb">4</div>
-                    <div class="titles">
-                        <h4>나이키 덩크 로우 레트로</h4>                       
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="thumb">5</div>
-                    <div class="titles">
-                        <h4>나이키 덩크 로우 레트로</h4>                        
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="thumb">6</div>
-                    <div class="titles">
-                        <h4>나이키 덩크 로우 레트로</h4>                       
-                    </div>
-                </div>                
             </div>
         </div>
 
@@ -261,16 +263,45 @@
     </div>
 
     <script>
-    const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        loop: true,
+        // swiper1
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 20,
+            
+            // autoplay
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            
+            // Navigation arrows
+            navigation: {
+                nextEl: '.s2 .next',
+                prevEl: '.s2 .prev',
+            },
+        });
 
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
+        // swiper2
+        const swiper2 = new Swiper('.swiper2', {
+            // Optional parameters
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 20,
+            
+            // autoplay
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            
+            // Navigation arrows
+            navigation: {
+                nextEl: '.s4 .next',
+                prevEl: '.s4 .prev',
+            },
+        });
     </script>
 </body>
 </html>
