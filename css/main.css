@@ -7,12 +7,19 @@ body {
     font-weight: 400;
 }
 
+.section {
+    background-color: #ccc;
+    width: 1220px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
 .header {
+    position: relative;
     height: 80px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    position: relative;
+    justify-content: space-between;
 }
 
 .header .gnb {
@@ -42,19 +49,117 @@ body {
 .main_slide {
     width: 1220px;
     height: 640px;
-    position: relative;
+    position: relative;    
     margin: 0 auto;
-    background-color: antiquewhite;
 }
 
-.text_box {
+.main_slide .text_box {
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 0;
+    left: 20px;
 }
 
-.photo {
+.main_slide .text_box h2 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.2;
+}
+
+.main_slide .text_box p {
+    margin: 10px 0 40px;
+}
+
+.main_slide .photo {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 20px;
+}
+
+
+/* section-title */
+.section_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.section_title h4 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.section_title .arrows {
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.section_title .arrows i {
+    width: 30px;
+    height: 30px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* section1 */
+.s1 {
+    display: flex;
+    gap: 20px;
+}
+
+.s1 .item {
+    width: 580px;
+    height: 580px;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.s1 .item h3 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.s1 .item a {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    font-size: 20px;
+}
+
+/* section2 */
+.s2 {}
+
+.s2 .section_items {}
+
+.s2 .section_items .item {}
+
+.s2 .section_items .item .thumb {
+    width: 280px;
+    height: 280px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.s2 .section_items .item .titles {
+    padding: 20px 0;
+}
+
+.s2 .section_items .item .titles h4 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.s2 .section_items .item .titles p {
+    font-size: 14px;
 }
