@@ -245,6 +245,11 @@ body {
 
 .s5 .text_box a.btn {
     margin: 0 auto;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 60px;
+    font-size: 14px;
 }
 
 /* footer */
