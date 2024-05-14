@@ -7,7 +7,7 @@ body {
     font-weight: 400;
 }
 
-.section {
+.section {   
     width: 1220px;
     margin: 100px auto;
     padding: 0 20px;
@@ -166,17 +166,17 @@ body {
 /* section3 */
 .s3 {
     display: flex;
-    gap: 22px;
+    gap: 20px;
 }
 
-.s3 .item .thumb {
+.s3 .item .thumb{
     width: 580px;
     height: 360px;
     background-color: #ddd;
     position: relative;
 }
 
-.s3 .item .thumb .user {
+.s3 .item .thumb .user{
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -185,18 +185,17 @@ body {
     gap: 10px;
 }
 
-.s3 .item .thumb .user .photo {
+.s3 .item .thumb .user .photo{
     width: 40px;
     height: 40px;
     background-color: #111;
     border-radius: 100%;
 }
 
-.s3 .item .thumb .user .info .name {
+.s3 .item .thumb .user .info .name{
     font-size: 14px;
 }
-
-.s3 .item .thumb .user .info .job {
+.s3 .item .thumb .user .info .job{
     font-size: 10px;
 }
 
@@ -209,7 +208,7 @@ body {
     width: 380px;
 }
 
-.s4 .section_items .item .thumb {
+.s4 .section_items .item .thumb{
     width: 380px;
     height: 280px;
     background-color: #ddd;
@@ -220,10 +219,11 @@ body {
     font-size: 36px;
 }
 
-.s4 .section_items .item .titles h4 {
+.s4 .section_items .item .titles h4{
     padding: 20px 0;
     font-weight: 700;
 }
+
 
 /* section5 */
 .s5 {
@@ -245,12 +245,6 @@ body {
 
 .s5 .text_box a.btn {
     margin: 0 auto;
-    width: 180px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 60px;
-    font-size: 14px;
-    font-weight: 400;
 }
 
 /* footer */
@@ -270,21 +264,21 @@ body {
     gap: 100px;
 }
 
-.footer .section .f_menu ul > li > a {
+.footer .section .f_menu > ul > li > a {
     font-size: 14px;
     font-weight: 700;
     display: block;
     padding: 10px;
 }
 
-.footer .section .f_menu ul > li > ul li a {
+.footer .section .f_menu > ul > li ul a {
     font-size: 13px;
     display: block;
     padding: 10px;
     color: #ddd;
 }
 
-.footer .section .f_menu ul > li > ul li a:hover {
+.footer .section .f_menu > ul > li ul a:hover {
     text-decoration: underline;
 }
 
@@ -298,17 +292,24 @@ body {
     position: absolute;
     top: 70px;
     right: 0;
+}
+
+.footer .section .sns {
     display: flex;
     gap: 20px;
+}
+
+.footer .section .sns a {
+    display: block;
 }
 
 .footer .section .sns a i {
     width: 30px;
     height: 30px;
-    background-color: #ddd;
-    border-radius: 100%;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 100%;
     color: #111;
 }

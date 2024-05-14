@@ -2,4 +2,5 @@
 
 ## 슬라이드
 
-- swiper
+- swiper slide
+- slick slide

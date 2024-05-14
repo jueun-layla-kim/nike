@@ -1,0 +1,25 @@
+.product {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 76px;
+}
+
+.product .slider {
+    width: 580px;
+    height: 580px;
+    background-color: #ddd;
+    position: relative;
+}
+
+.product .slider .arrows {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.slide {
+    width: 580px;
+    height: 580px;
+}
