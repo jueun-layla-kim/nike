@@ -19,6 +19,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #fff;
+    z-index: 10;
 }
 
 .header .bars {
@@ -145,8 +147,7 @@ body {
 }
 
 /* section2 */
-.main .s2 .section_items .item .thumb {
-    width: 280px;
+.main .s2 .section_items .item .thumb {    
     height: 280px;
     background-color: #ddd;
     display: flex;
@@ -324,8 +325,17 @@ body {
 }
 
 @media (max-width: 768px) {
+    .section {   
+        margin: 60px auto;
+        padding: 0 16px;
+    }
+    
     .header {
         height: 60px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
     }
 
     .header .bars {
@@ -372,9 +382,80 @@ body {
         width: 36px;
     }
 
+    /* main-slide */
+    .main_slide {
+        height: 580px;
+        margin-top: 60px;
+        overflow: hidden;
+    }
+
+    .main_slide .text_box {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .main_slide .text_box h2 {
+        font-size: 32px;
+        margin-bottom: 26px;
+    }
+
+    .main_slide .text_box p {
+        display: none;
+    }
+
+    .main_slide .photo {        
+        right: initial;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 130%;
+    }    
+    
+    .main_slide .photo img {
+        width: 100%;
+    }
+
+    /* section-title */
+    .section_title h4 {
+        font-size: 20px;
+    }
+
+    .section_title .arrows {
+       display: none;
+    }
+
+    /* section1 */
+    .main .s1 {
+        flex-direction: column;
+    }
+
+    .main .s1 .item {
+        flex: initial;
+        height: 340px;
+        padding: 20px;
+    }
+
+    .main .s1 .item h3 {
+        font-size: 24px;
+    }
+
+    .main .s1 .item a {
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    /* section3 */
+    .main .s3 {
+        flex-direction: column;
+    }
+
+    .main .s3 .item .thumb{
+        height: 210px;
+    }
+
     /* temp */
     .main .s1 {
-        display: none;
+        
     }
 
     .f_menu {
