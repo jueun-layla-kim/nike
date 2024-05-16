@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 </head>
 <body>
     <div class="wrap main">
         <div class="header">
+            <div class="bars"><i class="xi-bars"></i></div>
             <ul class="gnb">
                 <li><a href="#">Women</a></li>
-                <li><a href="#">Men</a></li>
+                <li><a href="#">Man</a></li>
                 <li><a href="#">Kids</a></li>
                 <li><a href="#">Accessories</a></li>
                 <li><a href="#">Sale</a></li>
@@ -296,6 +298,14 @@
                 prevEl: '.s4 .prev',
             },
         });
+    </script>
+
+    <script>
+        $(".bars i").click(function(){
+            $(this).toggleClass("xi-close")
+            $(".bars").toggleClass("on")
+            $(".gnb").toggleClass("on")
+        })
     </script>
 </body>
 </html>
