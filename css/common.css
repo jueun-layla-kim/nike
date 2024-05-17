@@ -11,6 +11,17 @@ body {
     max-width: 1220px;
     margin: 100px auto;
     padding: 0 20px;
+    z-index: 100;
+}
+
+.btn {
+    display: block;
+    width: 260px;
+    height: 70px;
+    line-height: 70px;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
 }
 
 /* header */

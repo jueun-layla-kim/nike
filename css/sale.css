@@ -1,0 +1,171 @@
+/* slide */
+.slide {
+    max-width: 1220px;
+    height: 640px;
+    position: relative;    
+    margin: 0 auto;
+}
+
+.slide .text_box {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+}
+
+.slide .text_box h2 {
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.slide .text_box p {
+    margin: 10px 0 30px;
+}
+
+.slide .photo {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+/* section1 */
+.s1 {
+    display: flex;
+    gap: 20px;
+}
+
+.s1 .item {
+    flex: 1;
+    height: 810px;
+}
+
+.s1 .item .thumb {
+    width: 580px;
+    height: 580px;
+    background-color: #ddd;
+    margin-bottom: 30px;
+}
+
+.s1 .item h3 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.s1 .item p.text {
+    margin: 20px 0 30px;
+    line-height: 1.5;
+}
+
+.s1 .item p.m_text {
+    display: none;
+}
+
+.s1 .item a.btn {
+     display: block;
+     width: 280px;
+     background-color: inherit;
+     color: inherit;
+     border: 1px solid #111;
+     font-size: 14px;
+}
+
+/* section2 */
+.s2 .section_items {
+    overflow: hidden;
+}
+
+.s2 .section_items .item .thumb {
+    height: 280px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.s2 .section_items .item .titles {
+    padding: 20px 0;
+}
+
+.s2 .section_items .item .titles h4 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.s2 .section_items .item .titles p {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    /* slide */
+    .slide {
+        height: 640px;
+        margin-top: 60px;
+        overflow: hidden;
+    }
+    
+    .slide .photo {        
+        right: initial;
+        left: 50%;
+        transform: translateX(-50%);
+    }    
+        
+    .slide .photo img {
+        height: 365px;
+    }
+
+    .slide .text_box .text {
+        display: none;
+    }
+
+    .slide .text_box {
+        top: 390px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .slide .text_box h2 {
+        font-size: 28px;
+        margin-bottom: 14px;
+    }
+
+    .slide .text_box p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    /* section1 */
+
+    .s1 .item {
+        flex: initial;
+        height: 500px;
+        width: 343px;
+    }
+
+    .s1 .item .thumb {
+        width: 343px;
+        height: 325px;
+        margin-bottom: 20px;
+    }
+
+    .s1 .item h3 {
+        font-size: 20px;
+    }
+
+    .s1 .item p.text {
+        display: none;
+    }
+
+    .s1 .item p.m_text {
+        display: block;
+        font-size: 14px;
+        margin: 24px 0 18px;
+    }
+    
+    .s1 .item a.btn {
+        font-size: 12px;
+        width: 100%;
+    }
+
+}
