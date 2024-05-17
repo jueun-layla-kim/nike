@@ -233,7 +233,7 @@
     }
 
     .detail .s1 .item:first-child .text_box_m {
-        padding: 0 0 32px;
+        padding-bottom: 32px;
         display: block;
     }
     
@@ -259,30 +259,6 @@
         top: 0;
         left: 0;
         width: 170%;
-    }
-
-    .detail .s2 .section_items .item .thumb {
-        width: 280px;
-        height: 280px;
-        background-color: #ddd;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 700;
-        font-size: 36px;
-    }
-
-    .detail .s2 .section_items .item .titles {
-        padding: 20px 0;
-    }
-
-    .detail .s2 .section_items .item .titles h4 {
-        font-weight: 700;
-        margin-bottom: 10px;
-    }
-
-    .detail .s2 .section_items .item .titles p {
-        font-size: 14px;
     }
 
 }
